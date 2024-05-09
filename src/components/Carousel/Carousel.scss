@@ -1,0 +1,19 @@
+.carousel-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.dot {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    &.active {
+      border: 1px solid white;
+    }
+  }
+  
