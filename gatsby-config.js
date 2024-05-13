@@ -23,12 +23,16 @@ module.exports = {
         isUsingColorMode: true,
       },
     },
-    {
+    /*{
       resolve: "gatsby-source-wordpress",
       options: {
         url: process.env.WPGRAPHQL_URL,
       },
-    },
+    },*/
+    
+    // ABOVE IS THE THING THAT I CHANGED TO TRY TO GO AROUND THE ISSUE FOR NOW
+
+
     //"gatsby-plugin-gatsby-cloud",
     // {
     //   resolve: "gatsby-plugin-google-analytics",
