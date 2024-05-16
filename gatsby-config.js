@@ -23,15 +23,22 @@ module.exports = {
         isUsingColorMode: true,
       },
     },
-    /*{
+    {
       resolve: "gatsby-source-wordpress",
       options: {
         url: process.env.WPGRAPHQL_URL,
+        auth: {
+          htaccess: {
+            username: process.env.WORDPRESS_USERNAME,
+            password: process.env.WORDPRESS_PASSWORD,
+          },
+        },
+        schema: {
+          requestConcurrency: 5, // Adjust as needed
+          previewRequestConcurrency: 2, // Adjust as needed
+        },
       },
-    },*/
-    
-    // ABOVE IS THE THING THAT I CHANGED TO TRY TO GO AROUND THE ISSUE FOR NOW
-
+    },
 
     //"gatsby-plugin-gatsby-cloud",
     // {
